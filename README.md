@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![](https://github.com/xyflow/web/blob/main/assets/codesandbox-header-ts.png?raw=true)
 
-## Getting Started
+# React Flow starter (Vite + TS)
 
-First, run the development server:
+We've put together this template to serve as a starting point for folks
+interested in React Flow. You can use this both as a base for your own React
+Flow applications, or for small experiments or bug reports.
+
+**TypeScript not your thing?** We also have a vanilla JavaScript starter template,
+just for you!
+
+## Getting up and running
+
+You can get this template without forking/cloning the repo using `degit`:
+
+```bash
+npx degit xyflow/vite-react-flow-template your-app-name
+```
+
+The template contains mostly the minimum dependencies to get up and running, but
+also includes eslint and some additional rules to help you write React code that
+is less likely to run into issues:
+
+```bash
+npm install # or `pnpm install` or `yarn install`
+```
+
+Vite is a great development server and build tool that we recommend our users to
+use. You can start a development server with:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+While the development server is running, changes you make to the code will be
+automatically reflected in the browser!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Things to try:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Create a new custom node inside `src/nodes/` (don't forget to export it from `src/nodes/index.ts`).
+- Change how things look by [overriding some of the built-in classes](https://reactflow.dev/learn/customization/theming#overriding-built-in-classes).
+- Add a layouting library to [position your nodes automatically](https://reactflow.dev/learn/layouting/layouting)
 
-## Learn More
+## Resources
 
-To learn more about Next.js, take a look at the following resources:
+Links:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [React Flow - Docs](https://reactflow.dev)
+- [React Flow - Discord](https://discord.com/invite/Bqt6xrs)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Learn:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [React Flow – Custom Nodes](https://reactflow.dev/learn/customization/custom-nodes)
+- [React Flow – Layouting](https://reactflow.dev/learn/layouting/layouting)
